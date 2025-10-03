@@ -260,8 +260,8 @@ function ProductList({ onHomeClick }) {
         e.preventDefault();
         setShowCart(false);
     };
-    const handleAddToCart = (plant) => {
-        dispatch(addItem(plant));
+    const handleAddToCart = (product) => {
+        dispatch(addItem(product));
         setAddedToCart((prevState) => ({
           ...prevState,
           [product.name]: true,
